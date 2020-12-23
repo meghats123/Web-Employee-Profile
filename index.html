@@ -17,33 +17,49 @@
                 <table class="table table-borderless">
                     <tr>
                         <td>Employee ID</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="eid" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Employee Name</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="ename" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Company Name</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="cname" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Designation</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="designation" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Salary</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="salary" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><Button class="btn btn-danger">REGISTER</Button></td>
+                        <td><Button  onclick="mybuttonclick()" class="btn btn-danger">REGISTER</Button></td>
                     </tr>
                 </table>
             </div>
             <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
         </div>
     </div>
+    <script>
+        function mybuttonclick(){
+            var getEmpid=document.getElementById("eid").value
+            var getEmpName=document.getElementById("ename").value
+            var getCompanyName=document.getElementById("cname").value
+            var getDesignation=document.getElementById("designation").value
+            var getSalary=document.getElementById("salary").value
+            console.log(getEmpid)
+            console.log(getEmpName)
+            console.log(getCompanyName)
+            console.log(getDesignation)
+            console.log(getSalary)
+            
+
+        }
+    </script>
     
 </body>
 </html>
